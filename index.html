@@ -1,53 +1,43 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            My first Visuals Studio project
-        </title>
-    </head>
-    <body>
-    <h1> This is my first Visuals Studio Project</h1>
-    <h2 class="text-mute"> On the right side, you will see rows. That is where my console is. Look where the console is. It will hold my information.</h2>
+<head>
+    <title>Pizzaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
 
-<script>
-var computer_speak="Hello World (famous quote) My master coder is Zarif Mustafiz.";
-console.log(computer_speak);
-var computer_speak2="Here in this console log, you will see some of his information";
-console.log(computer_speak2);
-var computer_combine= computer_speak.concat(computer_speak2);
-console.log(computer_combine)
-var Zarif_name="Hello! My name is Zarif Nafi Mustafiz.";
-console.log(Zarif_name);
-var Zarif_birthday="My birthday is on November 8 and I am 11 years old";
-console.log (Zarif_birthday);
-var combine_Zarif_name= Zarif_name.concat(Zarif_birthday);
-console.log(combine_Zarif_name)
-var Zarif_sisters="I have two sisters whose name are Zaina (age 7) and Zunera (age 5)";
-console.log (Zarif_sisters);
-var combine=Zarif_name.concat(Zarif_birthday, Zarif_sisters);
-console.log(combine);
-var What_Zarif_Wants_To_Be="When I grow up, I want to make my own space comapny which I want to learn on the outside of the Earth. I also want to land on Mars and built a base on Mars and the Moon.";
-console.log(What_Zarif_Wants_To_Be);
-var combine_2=Zarif_name.concat(Zarif_birthday, Zarif_sisters, What_Zarif_Wants_To_Be);
-console.log(combine_2);
-var Thank_You= "Thank you for seeing this console log";
-var combine_Finally= Zarif_name.concat(Zarif_birthday, Zarif_sisters, What_Zarif_Wants_To_Be, Thank_You);
-console.log(combine_Finally)
-var number="Now it's time to see the numbers console log.";
-console.log(number);
-var number_1=11;
-console.log(number_1);
-var number_2=7;
-console.log(number_2)
-var combine_number= number_1 + number_2;
-console.log(combine_number);
-var subtract_number= number_1 - number_2
-console.log(subtract_number);
-var multiply_number= number_1 * number_2;
-console.log(multiply_number);
-var divide_number= number_1 / number_2;
-console.log(divide_number)
-var goodybe="This is all in the console log! :)"
-console.log(goodybe)
-</script> 
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzaria</a>
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+    <div class="menu_div"> 
+        <button id="menu_list" onclick="getmenu()"> Show Menu </button>
+        <div id="display_menu"> </div>1. Chicken BBQ Pizza 2.Meat Lovers Pizza 3. Philly Chesse Steak Pizza. 4. Teriyaki Chicken Pizza. 5. Tex Mex Pizza. 6. Meatball Pizza. 7.Mamma Mia pizza. 8.Double Trouble Pizza  </div> 
+    <div class="row" id="viewblock">
+        <div  class="img_div"> 
+            <img class="img-responsive"  src="images/pizza.png"> </div> </div>    
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add toppings?"/></br>
+            <button id="add_toppings" onclick="add_item()" >Recommend a new Pizza</button>
+        </div>
+        
+    </div>
+     <div class="block2">
+         <div id="display_addedmenu"></div>
+     </div>
+    <div>
+        <img class="img-responsive"  src="images/topping.png">
+    </div>
+    
 </body>
 </html>
